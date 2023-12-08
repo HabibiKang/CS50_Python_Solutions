@@ -1,0 +1,20 @@
+words = ["SHE'S", "MY", "CHERRY", "PIE"]
+
+lyrics = str(input("SONG: "))
+
+if words not in lyrics:
+    print("NOT THE LYRICS")
+elif words in lyrics:
+    print("HOORAY")
+
+print("YOU WIN")
+
+play_again = str(input("Would you like to play again??\n")).title()
+
+if play_again == "Yes":
+    print("WHO LIVES IN A PINEAPPLE UNDER THE SEA???\n")
+    ans = str(input("Enter answer: ")).title()
+    if ans == "Spongebob Squarepants":
+        print("CORRECT!")
+    elif ans != "Spongebob Squarepants":
+        print("NOPE! YOU LOSE!")
